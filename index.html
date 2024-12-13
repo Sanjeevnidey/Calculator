@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class="Values output"></p>
+    
+    <p>
+        <button class="cal-button" onclick="
+        Calculate('1');
+        ">1</button>
+
+        <button class="cal-button" onclick="
+        Calculate('2');
+        ">2</button>
+
+        <button class="cal-button" onclick="
+        Calculate('3');
+        ">3</button>
+
+        <button class="cal-button yellow-button" onclick="
+        Calculate('+');
+        ">+</button>
+
+    </p>
+
+    <p>
+        <button class="cal-button" onclick="
+        Calculate('4');
+        ">4</button>
+
+        <button class="cal-button" onclick="
+        Calculate('5');
+        ">5</button>
+
+        <button class="cal-button" onclick="
+        Calculate('6');
+        ">6</button>
+
+        <button class="cal-button yellow-button" onclick="
+        Calculate('-');
+        ">-</button>
+
+    </p>
+
+    <p>
+        <button class="cal-button" onclick="
+        Calculate('7');
+        ">7</button>
+
+        <button class="cal-button" onclick="
+        Calculate('8');
+        ">8</button>
+
+        <button class="cal-button" onclick="
+        Calculate('9');
+        ">9</button>
+
+        <button class="cal-button yellow-button" onclick="
+        Calculate('*');
+        ">*</button>
+
+    </p>
+
+
+    <p>
+        <button class="cal-button" onclick="
+        Calculate('0');
+        ">0</button>
+
+        <button class="cal-button" onclick="
+        Calculate('.');
+        ">.</button>
+
+        <button class="cal-button" onclick="
+        calculation = eval(calculation);   //this function calculates the string
+        display();
+        localStorage.setItem('calculation', calculation); //saving the calculation
+        ">=</button>
+
+
+        <button class="cal-button yellow-button" onclick="
+        Calculate('/');
+        ">/</button>
+
+    </p>
+
+    <p>
+        <button class="cal-button clear-button" onclick="
+        calculation = '';
+        display();
+        localStorage.setItem('calculation', calculation); //saving the calculation
+        ">Clear</button>
+    </p>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
